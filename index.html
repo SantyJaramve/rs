@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPR</title>
+    <style>
+        body {
+            background-color: #ffe6e6;
+            font-family: 'Cursive', Arial, sans-serif;
+            text-align: center;
+            color: #a83f57;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            background: #ffccd5;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        .btn-carta {
+            display: inline-block;
+            margin-top: 50px;
+            background: #ff878d;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: none;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-carta:hover {
+            background: #d94a61;
+            transform: scale(1.05);
+        }
+        .btn-carta::before {
+            content: "💌";
+            margin-right: 10px;
+        }
+        #poema {
+            display: none;
+            margin-top: 30px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            background: #fff3f3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script>
+        function mostrarPoema() {
+            const poema = document.getElementById('poema');
+            poema.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Un Mensaje Especial para Ti</h1>
+    </header>
+    <main>
+        <p>Presiona la carta ❤️</p>
+        <button class="btn-carta" onclick="mostrarPoema()">Abrir Carta</button>
+        <div id="poema">
+            <p><strong>Volverte a Encontrar</strong></p>
+            <p>Hoy mi corazón late con nuevos matices,<br>
+            como un pintor que descubre colores felices.<br>
+            La primera vez fuiste un susurro del viento,<br>
+            y ahora, un anhelo que llena mi pensamiento.</p>
+            <p>Tu sonrisa, un faro que guía mi razón,<br>
+            tus palabras, la música de una nueva canción.<br>
+            No sé si lo notas, pero al mirarte brilla,<br>
+            un mundo que calma mis días de orilla.</p>
+            <p>Quiero verte de nuevo, saber más de ti,<br>
+            descubrir los secretos que en tus ojos vi.<br>
+            Tal vez caminar juntos bajo el cielo estrellado,<br>
+            o perderme en tu risa, un instante dorado.</p>
+            <p>No prometo más que mi ser transparente,<br>
+            y el deseo sincero de ser tu presente.<br>
+            Deja que esta segunda vez sea el comienzo,<br>
+            de un vínculo nuevo, profundo e inmenso.</p>
+        </div>
+    </main>
+</body>
+</html>
